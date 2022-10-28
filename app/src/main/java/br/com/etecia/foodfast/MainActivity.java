@@ -28,9 +28,25 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.mFav:
-                Toast.makeText(getApplicationContext(),"Clique no favorito",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Clique no favorito", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mPesq:
+                Toast.makeText(getApplicationContext(), "Clique na pesquisa", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mConfig:
+                Toast.makeText(getApplicationContext(), "Clique na configuração", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mHist:
+                Toast.makeText(getApplicationContext(), "Clique no historico", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mSobre:
+                Toast.makeText(getApplicationContext(), "Clique no sobre", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mComp:
+                Toast.makeText(getApplicationContext(), "Clique no compartilhar", Toast.LENGTH_SHORT).show();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
