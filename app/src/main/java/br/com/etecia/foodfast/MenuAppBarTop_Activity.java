@@ -21,7 +21,7 @@ public class MenuAppBarTop_Activity extends AppCompatActivity {
         idToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Cliquei no link", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Cliquei no menu", Toast.LENGTH_SHORT).show();
             }
         });
     }
