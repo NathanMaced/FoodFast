@@ -1,8 +1,10 @@
 package br.com.etecia.foodfast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,7 +23,28 @@ public class MenuAppBarTop_Activity extends AppCompatActivity {
         idToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Cliquei no menu", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Cliquei no menu", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        idToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.favorito:
+                        Toast.makeText(getApplicationContext(), "Clique no favorito", Toast.LENGTH_SHORT).show();
+                        break;
+
+                    case R.id.mSearch:
+                        Toast.makeText(getApplicationContext(), "Clique no pesquisar", Toast.LENGTH_SHORT).show();
+                        break;
+
+                    case R.id.mMore:
+                        Toast.makeText(getApplicationContext(), "Clique no mais", Toast.LENGTH_SHORT).show();
+                        break;
+                }
+                return false;
             }
         });
     }
