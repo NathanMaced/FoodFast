@@ -30,7 +30,7 @@ public class Porcoes_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 String nome = edtPorcoes.getText().toString();
-                Toast.makeText(getContext(),"Você escolheu "+nome,Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "Você escolheu " + nome, Toast.LENGTH_LONG).show();
             }
         });
 
