@@ -31,11 +31,9 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <FrameLayout
-        android:layout_below="@id/idTabLayout"
-        android:id="@+id/idCOntainerTabLayout"
+    <include layout="@layout/fragment_porcoes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FA8072"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTabLayout"/>
 
 </RelativeLayout>
