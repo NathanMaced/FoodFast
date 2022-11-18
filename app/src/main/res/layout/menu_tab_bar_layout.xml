@@ -37,7 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idTabLayout"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp" />
 
     <include
         android:id="@+id/fragBebidas"
@@ -45,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fragPorcoes"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp" />
 
     <include
         android:id="@+id/fragLanches"
@@ -53,6 +54,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fragBebidas"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp" />
 
 </RelativeLayout>
