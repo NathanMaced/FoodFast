@@ -1,49 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:background="#D54949"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imgPizza"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:src="#2c2c2c" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/txtTituloPizza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titulo" />
+        <ImageView
+            android:id="@+id/imgPizza"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pizza" />
 
-    <TextView
-        android:id="@+id/txtDescricaoPizza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Descrição da pizza" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:numStars="1" />
+            <TextView
+                android:id="@+id/txtTituloPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="arial"
+                android:text="Pizza pepperoni"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/txtAvaliacaoPizza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4.5" />
+            <TextView
+                android:id="@+id/txtDescricaoPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="arial"
+                android:text="@string/descricao"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="italic" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_share" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_star" />
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:numStars="1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+
+                    android:id="@+id/txtAvaliacaoPizza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="4.5"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_share" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_baseline_star" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
