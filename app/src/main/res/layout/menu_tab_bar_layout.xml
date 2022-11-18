@@ -31,9 +31,28 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <include layout="@layout/fragment_porcoes"
+    <include
+        android:id="@+id/fragPorcoes"
+        layout="@layout/fragment_porcoes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idTabLayout"/>
+        android:layout_below="@id/idTabLayout"
+        android:layout_marginBottom="20dp"/>
+
+    <include
+        android:id="@+id/fragBebidas"
+        layout="@layout/fragment_bebidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragPorcoes"
+        android:layout_marginBottom="20dp"/>
+
+    <include
+        android:id="@+id/fragLanches"
+        layout="@layout/fragment_lanches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragBebidas"
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>
